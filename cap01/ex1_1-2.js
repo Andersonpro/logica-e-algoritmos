@@ -10,7 +10,7 @@ class Garcom {
         this.#elementoHtml = document.querySelector('#meus-ganhos-totais');
         this.#inputValorConta = document.querySelector('#valor-da-conta');
         this.#inputSubmit = document.querySelector('#submit');
-        this.#inputSubmit.addEventListener('click', (event) => {
+        this.#inputSubmit.addEventListener('submit', (event) => {
             event.preventDefault();
             this.#taxaServico(Number(this.#inputValorConta.value));
         });

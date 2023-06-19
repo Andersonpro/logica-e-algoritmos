@@ -1,7 +1,8 @@
 import promptSync from 'prompt-sync';
 
 const prompt = promptSync();
-const pesoRacao = prompt("Digite o peso da ração (Kg): ");
-const consumoDiario  = prompt('Digite o consumo diário (g): ');
-
-//pg88
+let pesoRacao = Number(prompt("Digite o peso da ração (Kg): "));
+let consumoDiario  = prompt('Digite o consumo diário (g): ');
+pesoRacao = pesoRacao * 1000;
+console.log(`Duração: ${Math.floor(pesoRacao/consumoDiario)}`);
+console.log(`Sobra: ${pesoRacao%consumoDiario}`);

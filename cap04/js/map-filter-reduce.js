@@ -7,4 +7,3 @@ console.log(arrayAoQuadrado.join('**'));
 
 //filter
 const aprovados = notasAlunos.filter(nota => nota >= 7);
-console.log(aprovados);

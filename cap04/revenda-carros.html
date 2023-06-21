@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/revenda-carros.css">
+</head>
+<body>
+    <h1>Revenda Carros</h1>
+    <hr>
+    <form action="" id="form">
+        <label for="modelo">Modelo: </label>
+        <input type="text" id="modelo">
+        <label for="preco">Preço: R$</label>
+        <input type="text" id="preco">
+        <input type="submit" value="Adicionar">
+    </form>
+    <br>
+    <button id="mostrar-todos-button">Mostrar Todos</button>
+    <button id="filtrar-preco-button">Filtrar por Preço</button>
+    <button>Simular Promoção</button>
+    <hr>
+    <p>Lista de Carros Cadastrados: </p>
+    <div id="carros-cadastrados"></div>
+    <script src="js/revenda-carros.js"></script>
+</body>
+</html>
